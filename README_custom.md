@@ -1,4 +1,4 @@
-i.MX Repo Manifest README
+i.MX Repo Manifest README Custom21qplllllllllllllllllllllllllllllooppppp
 =========================
 
 This repo is used to download manifests for i.MX BSP releases.
@@ -33,7 +33,7 @@ Download the Yocto Project BSP
 ```
 $: mkdir <release>
 $: cd <release>
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b <branch name> [ -m <release manifest>]
+$: repo init -u https://github.com/jordonwu/imx-manifest.git -b <branch name> [ -m <release manifest>]
 $: repo sync
 ```
 
@@ -44,11 +44,15 @@ Examples
 
 To download the 6.12.20-2.0.0 release
 ```
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-walnascar -m imx-6.12.20-2.0.0.xml
+$: repo init -u https://github.com/jordonwu/imx-manifest.git -b imx-linux-walnascar -m imx-6.12.20-2.0.0_custom.xml
+or
+$: repo init -u git@github.com:jordonwu/imx-manifest.git -b imx-linux-walnascar -m imx-6.12.20-2.0.0_custom.xml
 ```
 To download the 6.12.34-2.1.0 release
 ```
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-walnascar -m imx-6.12.34-2.1.0.xml
+$: repo init -u https://github.com/jordonwu/imx-manifest.git -b imx-linux-walnascar -m imx-6.12.34-2.1.0_custom.xml
+or
+$: repo init -u git@github.com:jordonwu/imx-manifest.git -b imx-linux-walnascar -m imx-6.12.34-2.1.0_custom.xml
 ```
 
 Setup the build folder for a BSP release:
